@@ -1,6 +1,6 @@
 # Rise Interactive
 
-Scaffolded with [Vite](https://vitejs.org) and uses [Vue 3](https://v3.vuejs.org) Single File Components to break up static content. Purposely left non interactive.
+Scaffolded with [Vite](https://vitejs.org) and uses [Vue 3](https://v3.vuejs.org) Single File Components to break up static content. Purposely left non interactive. Utilizes [TailwindCSS](https://tailwindcss.com) for base CSS styles.
 
 Clone the repo
 ```
