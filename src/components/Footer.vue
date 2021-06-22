@@ -52,12 +52,29 @@ export default {
     height: 20px;
     margin-bottom: 20px;
   }
+  .footer-links a:hover,
+  .footer-links a:focus {
+    color: #ffffff;
+  }
   .footer-social svg {
     color: #ffffff;
+  }
+  .footer-social svg:hover,
+  .footer-social svg:focus {
+    opacity: 75%;
   }
   .footer-right {
     display: flex;
     flex-flow: column wrap;
+  }
+  .footer-button a:hover,
+  .footer-button a:focus {
+    background-color: #ffffff;
+    color: #888888;
+  }
+  .footer-copyright a:hover,
+  .footer-copyright a:focus {
+    color: #ffffff;
   }
   @media screen and (min-width: 1024px) {
     .footer-copy {
