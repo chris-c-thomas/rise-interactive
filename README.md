@@ -24,4 +24,4 @@ npm run build
 
 Hosted on [Netlify](https://netlify.com)
 
-https://hungry-torvalds-75fecc.netlify.app
+https:/riseinteractive.christhomas.codes
