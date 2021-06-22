@@ -24,4 +24,4 @@ npm run build
 
 Hosted on [Netlify](https://netlify.com)
 
-[https://riseinteractive.christhomas.codes](https:/riseinteractive.christhomas.codes)
+[https://www.riseinteractive.christhomas.codes](https:/riseinteractive.christhomas.codes)
