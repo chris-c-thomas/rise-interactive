@@ -6,7 +6,7 @@ seeMore.addEventListener('click', e => {
 
     const cards = document.getElementById('cards');
     card.innerHTML = `
-    <img src="../assets/img/img-11.jpg" alt="Pepperoni Pizza">
+    <img src="./src/assets/img/img-11.jpg" alt="Pepperoni Pizza">
     <h3 class="text-center text-sm text-darkGray font-brandon-grotesque font-bold pt-4 pb-1">ARTICLE</h3>
     <div class="card-break w-8 h-1 mx-auto m-2 bg-green"></div>
     <h2 class="text-lg text-black text-center font-brandon-grotesque font-bold p-2 mb-4">Cheesy Pasta The Will Blow Your Mind</h2>
