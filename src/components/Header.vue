@@ -13,10 +13,11 @@
     </header>
 </template>
 
-<script>
-
-</script>
+<script></script>
 
 <style>
-
+li a:hover,
+li a:focus {
+  text-decoration: underline;
+}
 </style>
