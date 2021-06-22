@@ -3,7 +3,7 @@
     <div class="navbar shadow-lg">
       <i class="nav-bars self-center fas fa-bars fa-2x cursor-pointer"></i>
 
-      <img src="../assets/img/CheeseWorld.png" alt="Cheese World Logo" class="self-center w-36">
+      <img src="../assets/img/CheeseWorld.png" alt="Cheese World Logo" class="cursor-pointer self-center w-36">
 
       <a href="#" class="nav-links self-center text-lg text-black font-open-sans font-bold">Health &amp; Wellness</a>
       <a href="#" class="nav-links self-center text-lg text-black font-open-sans font-bold">Sustainability</a>
@@ -33,12 +33,17 @@
     padding: 1rem;
   }
 
+  .nav-links:hover,
+  .nav-links:focus {
+    text-decoration: underline;
+  }
+
   .nav-links,
   .search-input{
     display: none;
   }
 
-  .search-input svg {
+  .search-input .fas {
     position: absolute;
     margin-left: 12px;
     margin-top: 8px;
@@ -49,7 +54,7 @@
     outline: none;
   }
 
-  svg {
+  .fas {
     color: #333333;
   }
 

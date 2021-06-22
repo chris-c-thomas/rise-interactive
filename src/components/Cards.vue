@@ -1,6 +1,6 @@
 <template>
   <section class="container mx-auto max-w-screen-lg">
-    <div class="cards">
+    <div id="cards" class="cards">
       
       <div class="card card-1 shadow-lg mt-4 mb-4">
         <div class="featured-text absolute p-1 bg-cyan text-sm text-white font-brandon-grotesque"><i class="fas fa-star"></i> Featured</div>
@@ -32,49 +32,49 @@
         <h2 class="text-lg text-black text-center font-brandon-grotesque font-bold p-2 mb-4">Behind the Scenes on a Cheese Dairy Farm</h2>
       </div>
 
-      <div class="card card-5 items-center shadow-lg mt-4 mb-4">
+      <div class="card card-5 card-hidden items-center shadow-lg mt-4 mb-4">
         <img src="../assets/img/img-5.jpg" alt="Pepperoni Pizza">
         <h3 class="text-center text-sm text-darkGray font-brandon-grotesque font-bold pt-4 pb-1">ARTICLE</h3>
         <div class="card-break w-8 h-1 mx-auto m-2 bg-green"></div>
         <h2 class="text-lg text-black text-center font-brandon-grotesque font-bold p-2 mb-4">The Surprising (and Delicious) History of Pizza</h2>
       </div>
 
-      <div class="card card-6 shadow-lg mt-4 mb-4">
+      <div class="card card-6 card-hidden shadow-lg mt-4 mb-4">
         <img src="../assets/img/img-6.jpg" alt="Pepperoni Pizza">
         <h3 class="text-center text-sm text-darkGray font-brandon-grotesque font-bold pt-4 pb-1">ARTICLE</h3>
         <div class="card-break w-8 h-1 mx-auto m-2 bg-green"></div>
         <h2 class="text-lg text-black text-center font-brandon-grotesque font-bold p-2 mb-4">The Right Way to Store Cheese Products</h2>
       </div>
 
-      <div class="card card-7 shadow-lg mt-4 mb-4">
+      <div class="card card-7 card-hidden shadow-lg mt-4 mb-4">
         <img src="../assets/img/img-7.jpg" alt="Pepperoni Pizza">
         <h3 class="text-center text-sm text-darkGray font-brandon-grotesque font-bold pt-4 pb-1">ARTICLE</h3>
         <div class="card-break w-8 h-1 mx-auto m-2 bg-green"></div>
         <h2 class="text-lg text-black text-center font-brandon-grotesque font-bold p-2 mb-4">Community Story, Food Trucks that Love Cheese</h2>
       </div>
 
-      <div class="card card-8 shadow-lg mt-4 mb-4">
+      <div class="card card-8 card-hidden shadow-lg mt-4 mb-4">
         <img src="../assets/img/img-8.jpg" alt="Pepperoni Pizza">
         <h3 class="text-center text-sm text-darkGray font-brandon-grotesque font-bold pt-4 pb-1">ARTICLE</h3>
         <div class="card-break w-8 h-1 mx-auto m-2 bg-green"></div>
         <h2 class="text-lg text-black text-center font-brandon-grotesque font-bold p-2 mb-4">What to Look For at the Cheesemonger's</h2>
       </div>
 
-      <div class="card card-9 shadow-lg mt-4 mb-4">
+      <div class="card card-9 card-hidden shadow-lg mt-4 mb-4">
         <img src="../assets/img/img-9.jpg" alt="Pepperoni Pizza">
         <h3 class="text-center text-sm text-darkGray font-brandon-grotesque font-bold pt-4 pb-1">ARTICLE</h3>
         <div class="card-break w-8 h-1 mx-auto m-2 bg-green"></div>
         <h2 class="text-lg text-black text-center font-brandon-grotesque font-bold p-2 mb-4">Seve Restaurants You Just Have to Try</h2>
       </div>
 
-      <div class="card card-10 shadow-lg mt-4 mb-4">
+      <div class="card card-10 card-hidden shadow-lg mt-4 mb-4">
         <img src="../assets/img/img-10.jpg" alt="Pepperoni Pizza">
         <h3 class="text-center text-sm text-darkGray font-brandon-grotesque font-bold pt-4 pb-1">ARTICLE</h3>
         <div class="card-break w-8 h-1 mx-auto m-2 bg-green"></div>
         <h2 class="text-lg text-black text-center font-brandon-grotesque font-bold p-2 mb-4">How Deep Dish is Scientifically the Best Pizza</h2>
       </div>
 
-      <div class="card card-11 shadow-lg mt-4 mb-4">
+      <div class="card card-11 card-hidden shadow-lg mt-4 mb-4">
         <img src="../assets/img/img-11.jpg" alt="Pepperoni Pizza">
         <h3 class="text-center text-sm text-darkGray font-brandon-grotesque font-bold pt-4 pb-1">ARTICLE</h3>
         <div class="card-break w-8 h-1 mx-auto m-2 bg-green"></div>
@@ -82,13 +82,15 @@
       </div>
     </div>
 
-    <div class="see-more mt-10 text-center">
+    <div id="seeMore" class="see-more mt-10 text-center">
       <a href="#" class="rounded-full bg-orange border-orange border-2 py-3 px-10 text-white text-lg font-open-sans font-bold">See More</a>
     </div>
   </section>
 </template>
 
-<script></script>
+<script>
+
+</script>
 
 <style>
   .cards {
@@ -100,38 +102,55 @@
     width: 75%;
   }
 
-  .card-5,
-  .card-6,
-  .card-7,
-  .card-8,
-  .card-9,
-  .card-10,
-  .card-11 {
+  .card-hidden {
     display: none;
+  }
+
+  .see-more a:hover {
+    background-color: #ffffff;
+    color: #ff6900;
   }
 
   @media screen and (min-width: 1024px) {
     .cards {
-      flex-flow: row wrap;
-      justify-content: space-between;
-      align-content: normal;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      column-gap: 20px;
     }
     .card {
-      width: 22.5%;
+      width: 100%;
+    }
+    .card-1 { 
+      grid-column: 1 / 3;
+     }
+    .card-2 { grid-column: 3 / 4; }
+    .card-3 { grid-column: 4 / 5; }
+    .card-4 { grid-column: 1 / 2; }
+    .card-5 { grid-column: 2 / 3; }
+    .card-6 { grid-column: 3 / 4; }
+    .card-7 { grid-column: 4 / 5; }
+    .card-8 { grid-column: 1 / 2; }
+    .card-9 { grid-column: 2 / 3; }
+    .card-10 { grid-column: 3 / 4; }
+    .card-11 { grid-column: 4 / 5; }
+
+    .card-1 img {
+      height: 180px;
+      width: 100%;
+      object-fit: cover;
     }
 
-    .card-5,
-    .card-6,
-    .card-7,
-    .card-8,
-    .card-9,
-    .card-10,
-    .card-11 {
+    .card-1 h2 {
+      font-size: 1.75rem;
+    }
+
+    .card-hidden {
       display: block;
     }
   }
 
-  .card svg {
+  .card .fas {
     color: #ffffff;
   }
 </style>

@@ -52,12 +52,31 @@ export default {
     height: 20px;
     margin-bottom: 20px;
   }
-  .footer-social svg {
+  .footer-links a:hover,
+  .footer-links a:focus {
     color: #ffffff;
+  }
+  .footer-social .fab,
+  .footer-social .fas {
+    color: #ffffff;
+  }
+  .footer-social .fab:hover,
+  .footer-social .fab:focus,
+  .footer-social .fas:hover,
+  .footer-social .fas:focus  {
+    opacity: 75%;
   }
   .footer-right {
     display: flex;
     flex-flow: column wrap;
+  }
+  .footer-button a:hover {
+    background-color: #ffffff;
+    color: #888888;
+  }
+  .footer-copyright a:hover,
+  .footer-copyright a:focus {
+    color: #ffffff;
   }
   @media screen and (min-width: 1024px) {
     .footer-copy {
