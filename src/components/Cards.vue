@@ -132,7 +132,7 @@
     }
   }
 
-  .card svg {
+  .card .fas {
     color: #ffffff;
   }
 </style>

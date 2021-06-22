@@ -43,7 +43,7 @@
     display: none;
   }
 
-  .search-input svg {
+  .search-input .fas {
     position: absolute;
     margin-left: 12px;
     margin-top: 8px;
@@ -54,7 +54,7 @@
     outline: none;
   }
 
-  svg {
+  .fas {
     color: #333333;
   }
 

@@ -56,11 +56,14 @@ export default {
   .footer-links a:focus {
     color: #ffffff;
   }
-  .footer-social svg {
+  .footer-social .fab,
+  .footer-social .fas {
     color: #ffffff;
   }
-  .footer-social svg:hover,
-  .footer-social svg:focus {
+  .footer-social .fab:hover,
+  .footer-social .fab:focus,
+  .footer-social .fas:hover,
+  .footer-social .fas:focus  {
     opacity: 75%;
   }
   .footer-right {
