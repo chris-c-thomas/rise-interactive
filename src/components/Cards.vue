@@ -1,6 +1,6 @@
 <template>
   <section class="container mx-auto max-w-screen-lg">
-    <div class="cards">
+    <div id="cards" class="cards">
       
       <div class="card card-1 shadow-lg mt-4 mb-4">
         <div class="featured-text absolute p-1 bg-cyan text-sm text-white font-brandon-grotesque"><i class="fas fa-star"></i> Featured</div>
@@ -82,7 +82,7 @@
       </div>
     </div>
 
-    <div id="showMore" class="see-more mt-10 text-center">
+    <div id="seeMore" class="see-more mt-10 text-center">
       <a href="#" class="rounded-full bg-orange border-orange border-2 py-3 px-10 text-white text-lg font-open-sans font-bold">See More</a>
     </div>
   </section>
@@ -122,7 +122,9 @@
     .card {
       width: 100%;
     }
-    .card-1 { grid-column: 1 / 3; }
+    .card-1 { 
+      grid-column: 1 / 3;
+     }
     .card-2 { grid-column: 3 / 4; }
     .card-3 { grid-column: 4 / 5; }
     .card-4 { grid-column: 1 / 2; }
@@ -137,6 +139,7 @@
     .card-1 img {
       height: 180px;
       width: 100%;
+      object-fit: cover;
     }
 
     .card-1 h2 {
