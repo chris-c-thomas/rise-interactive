@@ -70,8 +70,7 @@ export default {
     display: flex;
     flex-flow: column wrap;
   }
-  .footer-button a:hover,
-  .footer-button a:focus {
+  .footer-button a:hover {
     background-color: #ffffff;
     color: #888888;
   }

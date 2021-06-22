@@ -106,8 +106,7 @@
     display: none;
   }
 
-  .see-more a:hover,
-  .see-more a:focus {
+  .see-more a:hover {
     background-color: #ffffff;
     color: #ff6900;
   }
