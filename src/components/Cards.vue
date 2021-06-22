@@ -117,14 +117,30 @@
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
-      grid-template-areas: 
-        "card-1 card-2 card-3"
-        "card-4 card-5 card-6 card-7"
-        "card-8 card-9 card-10 card-11";
       column-gap: 20px;
     }
     .card {
       width: 100%;
+    }
+    .card-1 { grid-column: 1 / 3; }
+    .card-2 { grid-column: 3 / 4; }
+    .card-3 { grid-column: 4 / 5; }
+    .card-4 { grid-column: 1 / 2; }
+    .card-5 { grid-column: 2 / 3; }
+    .card-6 { grid-column: 3 / 4; }
+    .card-7 { grid-column: 4 / 5; }
+    .card-8 { grid-column: 1 / 2; }
+    .card-9 { grid-column: 2 / 3; }
+    .card-10 { grid-column: 3 / 4; }
+    .card-11 { grid-column: 4 / 5; }
+
+    .card-1 img {
+      height: 180px;
+      width: 100%;
+    }
+
+    .card-1 h2 {
+      font-size: 1.75rem;
     }
 
     .card-hidden {
